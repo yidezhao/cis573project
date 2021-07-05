@@ -204,7 +204,8 @@ app.use('/createFund', (req, res) => {
 			    }
 			    else {
 				//console.log(result);
-				res.render("viewFund", {'fund' : fund , 'status' : "Successfully created new Fund"});				
+				//res.render("viewFund", {'fund' : fund , 'status' : "Successfully created new Fund"});				
+				res.redirect('/viewFund?id=' + fund.id);
 			    }
 			});
 		
