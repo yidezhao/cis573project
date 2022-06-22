@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 // the host:port must match the location where you are running MongoDB
 // the "myDatabase" part can be anything you like
-mongoose.connect("mongodb+srv://yidezhao:yidezhao@cluster0.n0mrc.mongodb.net/test?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://yidezhao:<password>@cluster0.n0mrc.mongodb.net/test?retryWrites=true&w=majority");
 
 var Schema = mongoose.Schema;
 
